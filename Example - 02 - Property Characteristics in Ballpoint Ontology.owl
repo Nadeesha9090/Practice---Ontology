@@ -48,13 +48,17 @@
 
     <!-- http://www.nadeesha.com/wollongong/practice/ontology/example#hasFeature -->
 
-    <owl:ObjectProperty rdf:about="http://www.nadeesha.com/wollongong/practice/ontology/example#hasFeature"/>
+    <owl:ObjectProperty rdf:about="http://www.nadeesha.com/wollongong/practice/ontology/example#hasFeature">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
     
 
 
     <!-- http://www.nadeesha.com/wollongong/practice/ontology/example#hasMake -->
 
-    <owl:ObjectProperty rdf:about="http://www.nadeesha.com/wollongong/practice/ontology/example#hasMake"/>
+    <owl:ObjectProperty rdf:about="http://www.nadeesha.com/wollongong/practice/ontology/example#hasMake">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
     
 
 
