@@ -107,6 +107,24 @@
 
     <owl:Class rdf:about="http://www.nadeesha.com/wollongong/practice/ontology/example#BallpointPen">
         <rdfs:subClassOf rdf:resource="http://www.nadeesha.com/wollongong/practice/ontology/example#Pen"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.nadeesha.com/wollongong/practice/ontology/example#hasComponent"/>
+                <owl:someValuesFrom rdf:resource="http://www.nadeesha.com/wollongong/practice/ontology/example#BallPoint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.nadeesha.com/wollongong/practice/ontology/example#hasComponent"/>
+                <owl:someValuesFrom rdf:resource="http://www.nadeesha.com/wollongong/practice/ontology/example#InkReservoir"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.nadeesha.com/wollongong/practice/ontology/example#hasComponent"/>
+                <owl:someValuesFrom rdf:resource="http://www.nadeesha.com/wollongong/practice/ontology/example#Socket"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>A ballpoint pen, also known as a biro or ball pen, is a pen that dispenses ink over a metal ball at its point, i.e. over a &quot;ball point&quot;. (Wikipedia)</rdfs:comment>
     </owl:Class>
     
